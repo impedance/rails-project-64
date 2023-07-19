@@ -220,7 +220,7 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   puma (~> 5.0)
-  rails (~> 7.0.5, >= 7.0.5.1)
+  rails (~> 7.0.6)
   redis (~> 4.0)
   selenium-webdriver
   sprockets-rails

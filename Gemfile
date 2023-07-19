@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.2.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.5", ">= 7.0.5.1"
+gem "rails", "~> 7.0.6"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -51,6 +51,10 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+group :production do
+  gem 'pg'
+end
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -73,8 +77,4 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-end
-
-group :production do
-  gem 'pg'
 end
