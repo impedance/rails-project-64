@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/impedance/rails-project-63.git
+  revision: e23b52c243246064208442dce0dc80c344c9f5b6
+  specs:
+    hexlet_code (0.1.0)
+      activesupport
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -128,6 +135,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
+    pg (1.5.3)
     public_suffix (5.0.3)
     puma (5.6.6)
       nio4r (~> 2.0)
@@ -217,14 +225,16 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  hexlet_code (~> 0.1.0)!
   jbuilder
   jsbundling-rails
+  pg
   puma (~> 5.0)
   rails (~> 7.0.6)
   redis (~> 4.0)
   selenium-webdriver
   sprockets-rails
-  sqlite3 (~> 1.4)
+  sqlite3
   stimulus-rails
   turbo-rails
   tzinfo-data
