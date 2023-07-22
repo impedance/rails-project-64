@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/impedance/rails-project-63.git
-  revision: e23b52c243246064208442dce0dc80c344c9f5b6
-  specs:
-    hexlet_code (0.1.0)
-      activesupport
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -225,7 +218,6 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
-  hexlet_code (~> 0.1.0)!
   jbuilder
   jsbundling-rails
   pg
