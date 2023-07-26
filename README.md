@@ -1,5 +1,5 @@
 # README
-
+[![blog](https://github.com/impedance/rails-project-64/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/impedance/rails-project-64/actions/workflows/main.yml)
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
