@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 class HomeController < ApplicationController
   before_action :authenticate_user!
-  def index
-  end
+  def index; end
 
   # def destroy
   #   sign_out(current_user)
