@@ -1,3 +1,5 @@
+lint-x:
+	bundle exec rubocop -A
 lint:
 	bundle exec rubocop
 	bundle exec slim-lint app/views
