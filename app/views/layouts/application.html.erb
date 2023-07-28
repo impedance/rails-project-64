@@ -13,6 +13,22 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <% unless user_signed_in? %>
+      <ul>
+        <li>
+          <%= link_to "Войти", new_user_session_path %>
+        </li>
+        <li>
+          <%= link_to "Зарегистрироваться", new_user_registration_path %>
+        </li>
+      </ul>
+    <% else %>
+      <ul>
+        <li>
+          <%= link_to 'logout', destroy_user_session_path, data: { turbo_method: :delete }%>
+        </li>
+      </ul>
+    <% end %>
     <%= yield %>
   </body>
 </html>
