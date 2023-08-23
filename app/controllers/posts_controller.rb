@@ -1,17 +1,18 @@
+# frozen_string_literal: true
+
 class PostsController < ApplicationController
+  def index
+    @posts = Post.all
+  end
+
+  def show
+    @post = Post.find params[:id]
+  end
+
   def new
     @post = Post.new
     @user = current_user
   end
-
-  def index
-    @posts = Post.all
-  end
-  #
-  def show
-    @post = Post.find params[:id]
-  end
-  #
 
   # def edit
   #   @task = Task.find params[:id]
@@ -51,6 +52,6 @@ class PostsController < ApplicationController
     user_id = params[:post][:creator]
     user = User.find_by(id: user_id)
     category = Category.first
-    params.require(:post).permit(:title, :body, :creator).merge(creator: user, category: category)
+    params.require(:post).permit(:title, :body, :creator).merge(creator: user, category:)
   end
 end
